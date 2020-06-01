@@ -1,0 +1,6 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": ["@babel/plugin-transform-runtime", "@babel/syntax-dynamic-import", "@babel/plugin-proposal-class-properties"]
+  }
