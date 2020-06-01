@@ -1,6 +1,6 @@
 {
   "name": "form-control-js",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "",
   "main": "./dist/form-control.js",
   "scripts": {
@@ -13,6 +13,10 @@
   },
   "keywords": [],
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dz-rep/form-control-js"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",

@@ -12,16 +12,17 @@ $ npm install form-control-js
 
 ## Usage
 
+Create form with fields in html.
 
 Create **form** object:
 
 ```javascript
 const form = {
-    el: document.querySelector('.form'),
-    errors: {
+    el: document.querySelector('.form'),    //form element
+    errors: {                               //object with form errors
         failed: `Form not pass validation`
     },
-    errorField: document.querySelector('.error__form')
+    errorField: document.querySelector('.error__form') //element to show form errors
 }
 ```
 
@@ -30,14 +31,14 @@ Create array of **controls**:
 ```javascript
 const controls = {
     email: {
-        input: document.querySelector('.input__email'),
-        validators: [required(), email(), maxlength(255)],
-        errors: {
+        input: document.querySelector('.input__email'),     //input element
+        validators: [required(), email(), maxlength(255)],  //array of validators
+        errors: {                                           //object with input errors
             required: 'Email required',
             email: 'You entered an incorrect email address.',
             maxlength: 'This email address is too long (limit is 255 symbols).'
         },
-        errorField: document.querySelector('.error__email')
+        errorField: document.querySelector('.error__email') //element to show input errors
     },
     types: {
         input: document.querySelector('.select__types'),
@@ -46,7 +47,7 @@ const controls = {
             required: 'Please select types.'
         },
         errorField: document.querySelector('.error__types'),
-        updateOn: ['change']
+        updateOn: ['change']                                 //event to validate control
     }
 }
 ```
